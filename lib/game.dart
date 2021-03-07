@@ -54,8 +54,7 @@ class Disc extends PositionComponent {
       if (life <= 0) {
         remove();
       }
-    
-    else{life+=0.01;}}
+    else{life+=0.01;}
   }
 
   @override
