@@ -33,15 +33,9 @@ void set120Hz() async {
 }
 
 void main() async {
-  final game = ();MyGameMyGame/MyGame/MyGamMyGamMyGamMyGaMyGamMyGaMyGamMyGamMyGamMyGaMyGamMyGMyGamMyGamMyGamMyGaMyGamMyG
-MyGame
-MyGame
-
-  // await game.onLoad();
   runApp(
     GameWidget(
-      // game: MyGame(),
-      game: game,
+      game: MyGame(),
     ),
   );
   set120Hz();
