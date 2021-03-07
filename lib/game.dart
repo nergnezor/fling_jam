@@ -77,8 +77,7 @@ class MyGame extends BaseGame with DoubleTapDetector, TapDetector, VerticalDragD
   FPSCounter fpsCounter;
   MyGame() {
     Disc.startPos = window.physicalSize.bottomCenter(Offset(-Disc.radius, -Disc.radius));
-startPos.x = 200;
-startPos.y = 400;
+startPos = Offset(200,400);
     add(Disc()
       ..x = 200
       ..y = 100);
