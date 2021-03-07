@@ -26,6 +26,7 @@ jobs:
 #     - run: flutter test
    # - run: flutter build web
     - name: Deploy to GitHub Pages
+      if: false
       uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
