@@ -25,7 +25,7 @@ class Disc extends PositionComponent {
   var speed = 1.0;
   var speedX = 1.0;
   bool flying = false;
-  var life = 1.0;
+  var life = 0.1;
   static const radius = 100.0;
   static Offset startPos;
 
@@ -55,6 +55,7 @@ class Disc extends PositionComponent {
         remove();
       }
     }
+    else{life+=0.01;}
   }
 
   @override
@@ -77,7 +78,7 @@ class MyGame extends BaseGame with DoubleTapDetector, TapDetector, VerticalDragD
   FPSCounter fpsCounter;
   MyGame() {
     Disc.startPos = window.physicalSize.bottomCenter(Offset(-Disc.radius, -Disc.radius));
-
+Disc.startPos = Offset(200,400);
     add(Disc()
       ..x = 200
       ..y = 100);
